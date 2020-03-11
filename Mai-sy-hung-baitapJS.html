@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <script>
+       var students = [
+{id: 1, name: 'Tran Van A', className: '.net'},
+{id: 2, name: 'Tran Van B', className: '.net'},
+{id: 3, name: 'Tran Van C', className: 'angular'},
+{id: 4, name: 'Tran Van D', className: '.net'},
+{id: 5, name: 'Tran Van E', className: 'java'},
+{id: 6, name: 'Tran Van F', className: 'angular'},
+{id: 7, name: 'Tran Van G', className: 'java'},
+{id: 8, name: 'Tran Van H', className: 'test'},
+{id: 9, name: 'Tran Van I', className: 'test'},
+{id: 10, name: 'Tran Van J', className: 'angular'},
+{id: 11, name: 'Tran Van K', className: '.net'},
+{id: 12, name: 'Tran Van L', className: 'java'},
+{id: 13, name: 'Tran Van M', className: 'java'},
+{id: 14, name: 'Tran Van N', className: 'angular'},
+{id: 15, name: 'Tran Van O', className: 'test'}
+]
+function changeclass(temp) {
+var list = [];
+var stt = [];
+var all = [];
+var clnametemp = temp.options[temp.selectedIndex].value;
+var chosenamelist = document.getElementById("name");
+for (var i = 0; i < students.length; i++) {
+    if (students[i].className == clnametemp){
+       list.push(students[i].name);
+       stt.push(students[i].id);
+        }
+    if (clnametemp == "all"){
+    for (i;i<students.length; i++){
+                list.push(students[i].name);
+                stt.push(students[i].id);
+            }}
+    while (chosenamelist.options.length){
+            chosenamelist.remove(0);
+        }
+}
+for (var i = 0; i < list.length; i++) {
+        document.getElementById("name").innerHTML += "<option> " + " Stt = "+ stt[i] + " " + list[i]  + "</option>";
+    }
+}
+</script>
+    <select id="class" onclick="changeclass(this)" size="0" style="width:200px; height: 50px;">
+        <option  value="#">----SELECT----</option>
+        <option value="all">ALL</option>
+        <option  value=".net">DOTNET</option>
+        <option  value="java">JAVA</option>
+        <option  value="test">TEST</option>
+        <option  value="angular">ANGULAR</option>
+    </select> 
+    <select style="width:200px; height: 50px; margin-left: 50px;"" name="" id="name"></select>
+</body>
+</html>
