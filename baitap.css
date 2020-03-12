@@ -126,7 +126,7 @@ div.title,div.tg,div.view{
 }
  }
 
- @media screen and (max-width:707px){
+@media screen and (max-width:715px){
 .container{
     display: flex;
     flex-direction: column;
@@ -145,6 +145,5 @@ a{
 .content{ 
 width:auto;
  grid-template-columns: auto;
-
  }
 }
