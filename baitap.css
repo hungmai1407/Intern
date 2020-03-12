@@ -126,11 +126,11 @@ div.title,div.tg,div.view{
 }
  }
 
- @media screen and (max-width:620px){
+ @media screen and (max-width:707px){
 .container{
     display: flex;
     flex-direction: column;
-    align-item:center;
+    align-items:center;
 }
 .about{
     width: 100%;
@@ -142,7 +142,9 @@ a{
     width: 100%;
 }
 
-.content{
+.content{ 
+width:auto;
  grid-template-columns: auto;
+
  }
 }
