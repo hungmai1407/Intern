@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vnpost.css">
+    <link rel="stylesheet" href="./all.css">
+</head>
+<body>
+  <style>
+    .menupopup1{
+      width: 350px;
+    }
+  </style>
+    <script>
+      function change(){
+       document.getElementById('menuresponsive').classList.toggle('menupopup1')
+    }
+    </script>
+<header>
+  <div class="first">
+            <img src="./vnpostlogo.png" alt="">
+            <div class="info">
+                <span class="info-u"><i class="fas fa-user-circle"></i> Username - Example@.com</span>
+             </div>
+</header>
+<div class="container">
+<div class="navbar">
+  <a href="">HỆ THỐNG</a>
+  <a href="">KÊ KHAI</a>
+  <a href="">QUẢN LÝ SỰ VỤ</a>
+  <a href="">BÁO CÁO THỐNG KÊ</a>
+  <a href="">QUẢN LÝ BIÊN LAI</a>
+  <a href="">TRA CỨU</a>
+</div>
+<div class="content">
+   <div class="menupopup" id="menuresponsive">
+    <div onclick="change()" style="margin: 5px; width: auto;text-align: right; background-color: #5c5cfa;  border-radius:15px; margin-bottom: 20px;"><img class="logobutton" src="./icon.webp" alt=""></div>
+    <div id="menu-content">
+        <a href=""><img src="./user.png" alt=""></i> QUẢN LÝ THƯ VIỆN</br></a>
+        <a href=""><img src="./user.png" alt=""></i> QUẢN LÝ THƯ VIỆN</a>
+      <ul>
+        <li>
+          <a href=""><img src="./user.png" alt=""></i> QUẢN LÝ THƯ VIỆN</a>
+        </li>
+        <li>
+          <a href=""><img src="./user.png" alt=""></i> QUẢN LÝ THƯ VIỆN</a>
+        </li>
+      </ul>
+  </div>
+  </div>
+<div class="content-search">
+    <p class="title">DANH MỤC MẠNG LƯỚI</p>
+    <div id="search">
+    <input type="text" style="width: 70%;height: 25px; margin:0px 10px;" ><a href="" style="text-decoration: none;"><span style=" padding: 5px 15px;
+    border: 2px dashed;">Tìm kiếm</span></a></div>
+    <div id="folder">
+      <ul>
+        <li><img src="./1.png" alt="">BƯU ĐIỆN TỔNG</li>
+        <ul>
+          <li><img src="./1.png" alt="">BƯU ĐIỆN TRUNG TÂM</li>
+          <ul>
+            <li>
+              <img src="./1.png" alt="">BƯU ĐIỆN HÀ NỘI
+            </li>
+            <ul>
+              <li><img src="./1.png" alt="">BƯU ĐIỆN BẮC TỪ LIÊM</li>
+            </ul>
+          </ul>
+        </ul>
+      </ul>
+    </div>
+</div>
+<div class="content-form">
+  <p class="title">THÔNG TIN CHI TIẾT</p>
+  <div class="input-form" id="form">
+    <div>
+    <label for="">Tên</label>
+    <input type="text" name="" id="">
+    <label for="">Mã</label>
+    <input type="text">
+    </div> 
+    <div>
+    <label for="">Địa chỉ: </label>
+    <input type="text" placeholder="Thành Phố....">
+    <input type="text" placeholder="Quận,Huyện,...">
+    <input type="text" placeholder="Phường,Xã,..."> 
+    <input type="text" size="70%" style="margin-top: 15px;
+    margin-left: 163px;" placeholder="Số nhà, Tên đường chính xác,....">
+  </div>
+  <div>
+    <label for="">Điện thoại: </label>
+    <input type="text">
+    <label for="">Số FAX</label>
+    <input type="text">
+  </div>
+  <div>
+    <label for="">Loại BC</label>
+    <input type="text" size="70%">
+  </div>
+  <div>
+    <label for="">Cơ quan BHXH:</label>
+    <input type="text" size="70%">
+  </div>
+</div>
+</div>
+</body>
+</html>

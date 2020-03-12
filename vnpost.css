@@ -1,0 +1,140 @@
+body{
+    font-family:segoe ui light;
+    box-sizing:border-box;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+.first img{
+    width: 100px;
+    height: 80px;
+    overflow:hidden;
+    padding-top:10px;
+}
+.info{
+    padding-top: 30px;
+}
+.header{
+    height:500px;
+}
+.navbar{
+    background-color:blue;
+    height:42px;
+}
+div.navbar  a{
+    display:block;
+    float:left;
+    padding:10px;
+    margin: 0px 10px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+}
+div.navbar a:hover{
+    background-color:#FF9800;
+}
+div.navbar  a:first-child{
+    background-color:#FF9800;
+}
+.content{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns:auto auto auto;
+}
+.menupopup{
+    width: 65px;
+    box-shadow: 0px 10px 10px 0px black;
+    height: 600px;
+    transition: 0.5s;
+    border-radius:15px;
+}
+.logobutton{
+    width:40px;
+    padding-top:5px;
+    padding-right:6px;
+}
+#menu-content a{
+    margin-left:13px;
+    text-decoration:none;
+    font-size:20px;
+    line-height:50px;
+    font-weight:bold;
+    white-space:nowrap;
+    color:black;
+}
+#menu-content li{
+    list-style: none;
+    padding-left: 13px;
+}
+#menu-content a:hover{
+    color:orange;
+}
+#menu-content{
+    overflow:hidden;
+}
+#menu-content img{
+    margin-right:20px;
+    width:30px;
+    padding:5px;
+    background-color:orange;
+    border-radius:10px;
+}
+ .content-search{
+     width: 500px;
+     border-radius: 20px;
+     border:black dashed;
+    
+ }
+ .content-form{
+     width: 700px;
+     border-radius: 20px;
+     border:black dashed;
+     height:500px;
+ }
+ p.title{
+     font-weight:600;
+     font-size:24px;
+     padding-left:30px;
+ }
+
+ #folder{
+     padding-top:20px;
+     margin-left:40px;
+ }
+
+ #folder li{
+     cursor: pointer;
+     list-style: none;
+     font-weight:bold;
+     margin-bottom:20px;
+ }
+
+ #folder img{
+  width: 40px;
+  margin-right:20px;
+}
+#folder li:hover{
+     color:orange;
+     text-decoration:underline;
+ }
+#form div{
+    margin-bottom:30px;    
+}
+#form label{
+    width:120px;
+    padding-left:40px;
+    display:inline-block
+}
+
+input{
+    border:none;
+    border-bottom:1px solid;
+    height:25px;
+}
+#search{
+    border:1px solid;
+    padding:20px;
+    margin: 0px 10px;
+}
