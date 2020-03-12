@@ -4,25 +4,7 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-@media screen and (max-width:620px){
-.container{
-    display: flex;
-    flex-direction: column;
-}
-.about{
-    width: 100%;
-}
-.menu{
-    margin-bottom:0px;
-    width: 100%;
-}
-a{
-    width: 100%;
-}
-.about p{
-    width: 100%;
-}
-}
+
 header{
     width: auto;
     padding: 30px 0px;
@@ -54,23 +36,22 @@ ul a{
     width: 100%;
     min-width: 70px;}
 .content{
-    width: auto;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+   width: auto;
+   padding:5px 10px;
+   display:grid;
+   grid-template-columns:auto auto auto auto;
 }
 
 .about{
-    width: auto;
+    width: 200px;
     text-align: center;
     background-color: #33333338;
     margin-top: 5px;
     display: inline-table;
 }
 .about p{
-    max-width: 400px;
-    margin: 0px 5px;
+    width:auto;
+    margin:10px;
     padding-bottom: 10px;
 }
 footer{
@@ -78,10 +59,11 @@ footer{
     text-align: center;
 }
 .item{
-    width: 286px;
+    max-width: 400px;
+    min-width:200px;
     height: 250px;
     margin: 10px 2px;
-        box-shadow:  1px 1px 5px 0px black;
+    box-shadow:  1px 1px 5px 0px black;
 }
 .item:hover{
     box-shadow: 1px 4px 20px 1px black;
@@ -128,3 +110,39 @@ div.title,div.tg,div.view{
     padding:0px 10px;
 }
 
+
+
+
+
+@media screen and (max-width:1230px){
+.content{
+     grid-template-columns:auto auto auto;
+}
+ }
+
+@media screen and (max-width:995px){
+.content{
+     grid-template-columns:auto auto;
+}
+ }
+
+ @media screen and (max-width:620px){
+.container{
+    display: flex;
+    flex-direction: column;
+    align-item:center;
+}
+.about{
+    width: 100%;
+}
+.menu{
+    width: 100%;
+}
+a{
+    width: 100%;
+}
+
+.content{
+ grid-template-columns: auto;
+ }
+}
