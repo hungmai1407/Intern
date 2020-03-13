@@ -110,10 +110,11 @@ div.title,div.tg,div.view{
     padding:0px 10px;
 }
 
-
-
-
-
+@media screen and (min-width:1370px){
+    .about{
+        width:200px;
+    }
+}
 @media screen and (max-width:1322px){
 .content{
      grid-template-columns:auto auto auto;
@@ -125,7 +126,6 @@ div.title,div.tg,div.view{
     width:200px;
 }
  }
-
 @media screen and (max-width:1104px){
 .content{
      grid-template-columns:auto auto;
@@ -137,7 +137,6 @@ div.title,div.tg,div.view{
     width:200px;
 }
  }
-
 @media screen and (max-width:881px){
 .container{
     display: flex;
