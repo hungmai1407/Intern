@@ -17,8 +17,6 @@ header{
     justify-content: space-between;
 
 }
-.menu{
-}
 ul{
     list-style: none;
     display: flex;
@@ -37,10 +35,10 @@ ul a{
     width: 100%;
     }
 .content{
-   width: auto;
    padding:5px 10px;
    display:grid;
    grid-template-columns:auto auto auto auto;
+
 }
 
 .about{
@@ -59,11 +57,12 @@ footer{
     text-align: center;
 }
 .item{
-    max-width: 400px;
-    min-width:200px;
-    height: 250px;
+    min-width:110px;
+    height: auto;
     margin: 10px 2px;
     box-shadow:  1px 1px 5px 0px black;
+    background-color:white;
+    
 }
 .item:hover{
     box-shadow: 1px 4px 20px 1px black;
@@ -76,12 +75,13 @@ footer{
 .item img{
     width: 100%;
     height: 150px;
+       object-fit:cover;
 }
 
 div.title {
     display: -webkit-box;
     max-width: 100%;
-    height: 35px;
+    height: 45px;
     margin: 0 auto;
     font-size: 14px;
     line-height: 1.2;
@@ -104,10 +104,11 @@ div.tg{
     margin-top:10px;
 }
 .tg,.view{
-    color: #000000bd
+    color: #000000bd;
+
 }
 div.title,div.tg,div.view{
-    padding:0px 10px;
+    padding:10px 10px;
 }
 
 @media screen and (min-width:1370px){
@@ -115,7 +116,7 @@ div.title,div.tg,div.view{
         width:200px;
     }
 }
-@media screen and (max-width:1322px){
+@media screen and (max-width:1024px){
 .content{
      grid-template-columns:auto auto auto;
 }
@@ -126,7 +127,7 @@ div.title,div.tg,div.view{
     width:200px;
 }
  }
-@media screen and (max-width:1104px){
+@media screen and (max-width:768px){
 .content{
      grid-template-columns:auto auto;
 }
@@ -137,7 +138,7 @@ div.title,div.tg,div.view{
     width:200px;
 }
  }
-@media screen and (max-width:881px){
+@media screen and (max-width:620px){
 .container{
     display: flex;
     flex-direction: column;
@@ -153,4 +154,7 @@ div.title,div.tg,div.view{
 width:auto;
  grid-template-columns: auto;
  }
+.item{
+   margin:7px 30px;
+}
 }
