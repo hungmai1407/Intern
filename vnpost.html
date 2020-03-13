@@ -11,12 +11,32 @@
   <style>
     .menupopup1{
       width: 350px;
-      box-shadow: 4px 6px 20px 13px black;
+      box-shadow: 0px 10px 10px 0px black;
     }
+
+    .logobutton1{
+    transform: rotate(90deg);
+    transition: 0.7s;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.paddingmenu{
+  margin-left: 60px;
+  transition: 0.5s;
+}
+
   </style>
     <script>
       function change(){
-       document.getElementById('menuresponsive').classList.toggle('menupopup1')
+       document.getElementById('menuresponsive').classList.toggle('menupopup1');
+       document.getElementById('button').classList.toggle('logobutton1');
+       document.getElementById('button').classList.toggle('logobutton');
+       document.getElementById('menu-item-template').classList.toggle('paddingmenu');
+       document.getElementById('menu-item-template').classList.toggle('a');
     }
     </script>
 <header>
@@ -37,18 +57,17 @@
 </div>
 <div class="content">
    <div class="menupopup" id="menuresponsive">
-    <div onclick="change()" style="margin: 5px; width: auto;text-align: right; background-color: #5c5cfa;  border-radius:15px; margin-bottom: 20px;"><img class="logobutton" src="./icon.webp" alt=""></div>
+    <div onclick="change()" style="margin: 5px; width: auto;text-align: right; background-color: #5c5cfa;  border-radius:15px; margin-bottom: 20px;"><img src=button1.png id="button" class="logobutton"></div>
     <div id="menu-content">
-        <a href=""><img src="./user.png" alt=""></i> QUẢN LÝ THƯ VIỆN</br></a>
-        <a href=""><img src="./user.png" alt=""></i> QUẢN LÝ THƯ VIỆN</a>
-      <ul>
-        <li>
-          <a href=""><img src="./user.png" alt=""></i> QUẢN LÝ THƯ VIỆN</a>
+        <a href=""><img src="./user.png" alt=""><span> DANH MỤC MẠNG LƯỚI</span></a>
+        <a href=""><img src="./item.png"  style="background-color:lightblue;" alt=""> QUẢN LÝ THƯ VIỆN</a>
+        <div id="menu-item-template">
+        <li >
+          <a href="" style="font-size: 17px;"><img  style="width:20px; background-color: tomato; margin-right: 15px;" src="./item2.png" alt=""> QUẢN LÝ THƯ VIỆN</a>
         </li>
         <li>
-          <a href=""><img src="./user.png" alt=""></i> QUẢN LÝ THƯ VIỆN</a>
-        </li>
-      </ul>
+          <a href="" style="font-size: 17px"><img  id="menu-item-template" style="width:20px; background-color: violet;margin-right: 15px;" src="./item3.png" alt=""> QUẢN LÝ THƯ VIỆN</a>
+        </li></div>
   </div>
   </div>
 <div class="content-search">

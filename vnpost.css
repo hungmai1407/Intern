@@ -45,18 +45,20 @@ div.navbar  a:first-child{
 }
 .menupopup{
     width: 65px;
-    box-shadow: 0px 10px 10px 0px black;
     height: 600px;
     transition: 0.5s;
     border-radius:15px;
+    border: 1px dashed;
 }
-.logobutton{
-    width:40px;
-    padding-top:5px;
-    padding-right:6px;
+img.logobutton{
+       height: 30px;
+       width: 30px;
+       transition: 0.5s;
+       padding-top:6px;
+       padding-right:11px;
+       margin-bottom: 4px;
 }
 #menu-content a{
-    margin-left:13px;
     text-decoration:none;
     font-size:20px;
     line-height:50px;
@@ -66,53 +68,55 @@ div.navbar  a:first-child{
 }
 #menu-content li{
     list-style: none;
-    padding-left: 13px;
+    padding-left: 5px;
+    transition: 0.7s;
 }
 #menu-content a:hover{
     color:orange;
 }
 #menu-content{
     overflow:hidden;
+    padding-left: 13px;
 }
 #menu-content img{
-    margin-right:20px;
     width:30px;
     padding:5px;
     background-color:orange;
     border-radius:10px;
+    margin-right: 10px;
 }
- .content-search{
+.content-search{
      width: 500px;
      border-radius: 20px;
-     border:black dashed;
+     border:black dashed 1px;
     
  }
- .content-form{
+.content-form{
      width: 700px;
      border-radius: 20px;
-     border:black dashed;
+     border:black dashed 1px;
      height:500px;
  }
- p.title{
+p.title{
      font-weight:600;
      font-size:24px;
      padding-left:30px;
  }
 
- #folder{
+#folder{
      padding-top:20px;
-     margin-left:40px;
+
  }
 
- #folder li{
+#folder li{
      cursor: pointer;
      list-style: none;
      font-weight:bold;
      margin-bottom:20px;
  }
 
- #folder img{
-  width: 40px;
+#folder img{
+  width: 30px;
   margin-right:20px;
 }
 #folder li:hover{
@@ -125,13 +129,13 @@ div.navbar  a:first-child{
 #form label{
     width:120px;
     padding-left:40px;
-    display:inline-block
+    display:inline-block;
 }
-
 input{
     border:none;
     border-bottom:1px solid;
     height:25px;
+    outline: none;
 }
 #search{
     border:1px solid;
